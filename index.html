@@ -192,7 +192,7 @@
 					<a href="https://bestetherapeut.nl/" target="_blank" class="portfolio-item set-bg bg-size-hin" data-setbg="img/hin3.jpg">
 						<div class="portfolio-text">
 							<h2>HIN - De Beste Therapeut</h2>
-							<p>Photography</p>
+							<p>Hypnotherapy Portal</p>
 						</div>
 					</a>
 				</div>
@@ -201,7 +201,7 @@
 					<a href="https://avtobys.kz/" target="_blank" class="portfolio-item set-bg bg-size-avtobys" data-setbg="img/avtobys.svg">
 						<div class="portfolio-text">
 							<h2>Avtobys(Smart Qala)</h2>
-							<p></p>
+							<p>Management system for busdepot</p>
 						</div>
 					</a>
 				</div>
@@ -251,25 +251,26 @@
 				<div class="col-lg-8 offset-lg-2">
 					<div class="con-info wow fadeInUp" data-wow-delay="0.2s">
 						<p class="subtitle">Almaty</p>
-						<h2>53a Gabdullin Street,<br>Kazakhstan. <br><br>+7 708 007 0079</h2>
+						<h2>53a Gabdullin Street,<br>Kazakhstan. <br><br>+7 708 007 0079<br>zhygmytov@gmail.com</h2>
 					</div>
 					<!-- contact form -->
-					<form action="mail.php" method="POST" class="contact-form" id="contact-form">
-						<div class="row">
-							<div class="col-sm-6">
-								<input type="text" name="name" id="name" required placeholder="Your Name">
-							</div>
-							<div class="col-sm-6">
-								<input type="email" name="email" id="email" required placeholder="Email address">
-							</div>
-							<div class="col-sm-12">
-								<textarea id="massage" name="massage" required placeholder="Your Massage"></textarea>
-								<div class="text-center">
-									<button type="submit" class="site-btn" id="send-form">Send Massege</button>
-								</div>
-							</div>
-						</div>
-					</form>
+					<div id="map"></div>
+					<script>
+						// Initialize and add the map
+						function initMap() {
+							// The location of Uluru
+							var uluru = {lat: 43.228850, lng: 76.913730};
+							// The map, centered at Uluru
+							var map = new google.maps.Map(
+									document.getElementById('map'), {
+										zoom: 12, 
+										center: uluru,
+										panControl: false,
+										});
+							// The marker, positioned at Uluru
+							var marker = new google.maps.Marker({position: uluru, map: map});
+						}
+								</script>
 				</div>
 			</div>
 		</div>
@@ -300,6 +301,9 @@
 	<script src="js/particles.min.js"></script>
 	<script src="js/init-particles.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMv9j-3vY5FQZvhAaAwvl58wwbUzNuEM4&callback=initMap&language=en">
+	</script>
 	<script src="js/scripts.js"></script>
 
 </body>
