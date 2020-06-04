@@ -26,6 +26,8 @@ Table of contents
 ----------------------*/
 html, body {
   height: 100%;
+  width: 100vw;
+  /*overflow-x: hidden;*/
  }
 
 body {
@@ -503,10 +505,16 @@ ul, ol {
       .sc-img {
         width: 200px;
       }
+      .sc-img-short {
+        display: none;
+      }
 
 /*-----------------------
 	Portfolio Section
 -------------------------*/
+.portfolio-section {
+  overflow-x: hidden;
+}
 .portfolio-filter {
   list-style: none;
   margin-bottom: 40px; }
@@ -760,6 +768,20 @@ ul, ol {
     font-size: 40px; }
 
   .intro-content h3 {
-    font-size: 14px; } }
+    font-size: 14px; }
+  
+  .sc-img {
+    display: none;
+  }
+
+  .sc-img-short {
+    display: block;
+    width: 60px;
+    max-width: none;
+  }
+  .innoforce-logo {
+    max-width: none;
+  }
+  }
 
 /*# sourceMappingURL=style.css.map */
