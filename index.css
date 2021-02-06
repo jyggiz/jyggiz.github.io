@@ -1,0 +1,38 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.background {
+/*object-fit: cover;*/
+width: 100vw;
+height: 100vh;
+position: fixed;
+top: 0;
+left: 0;
+}
+
+.container {
+position: absolute;
+background-color: white;
+top: 20px;
+right: 50px;
+}
+
+.container-title {
+font-size: 25px;
+margin-right: 3px;
+}
+
+.container-text {
+text-align: left;
+margin-left: 5px;
+}
+
+.container-icons {
+display: flex;
+margin-left: 5px;
+}
+
+.icon {
+margin-right: 25px;
+}
