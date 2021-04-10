@@ -3,36 +3,62 @@ body {
 }
 
 .background {
-/*object-fit: cover;*/
-width: 100vw;
-height: 100vh;
-position: fixed;
-top: 0;
-left: 0;
+  /*object-fit: cover;*/
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .container {
-position: absolute;
-background-color: white;
-top: 20px;
-right: 50px;
+  position: absolute;
+  background-color: white;
+  top: 20px;
+  right: 50px;
 }
 
 .container-title {
-font-size: 25px;
-margin-right: 3px;
+  font-size: 25px;
+  margin-right: 3px;
 }
 
 .container-text {
-text-align: left;
-margin-left: 5px;
+  text-align: left;
+  margin-left: 5px;
 }
 
 .container-icons {
-display: flex;
-margin-left: 5px;
+  display: flex;
+  margin-left: 5px;
 }
 
 .icon {
-margin-right: 25px;
+  margin-right: 25px;
+}
+
+@media (max-width: 500px) {
+  .background {
+     object-fit: cover;
+  }
+  .container {
+    padding: 1rem 0.5rem !important;
+    margin: 40px !important;
+    top: unset;
+    right: unset;
+    position: relative;
+  }
+
+  .container-title {
+    font-size: 20px;
+  }
+
+  .container-text {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+  }
+
+  .company {
+    margin-bottom: 1rem;
+  }
 }
